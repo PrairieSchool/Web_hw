@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WebHW_WeatherCities</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS_hw.css"> 
+
+
+<style>
+
+.img-thumbnail {
+padding-right: 20px;
+padding-bottom: 20px;
+line-height: 1.42857143;
+background-color: #ddd;
+border: 1px solid #ddd;
+border-radius: 4px;
+-webkit-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+display: inline-block;
+max-width: 100%;
+height: auto;
+}
+
+.dropdown, .dropup {
+position: static;
+}
+</style>
+</head>
+
+<body>
+
+  <ul style="height:44px">
+    <li id="HomeName"><a href="WebHW_weatherCities.html" style="font-size:18px"><strong>latitudes</strong></a></li>
+    <li><a href="weatherData.html" >data</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="active" class="dropbtn">plots</a>
+      <div class="dropdown-content">
+        <a href="temp.htm">temp</a>
+        <a href="humid.htm">humidity</a>
+        <a href="cloud.htm"">clouds</a>
+        <a href="wind.htm" class="active">wind</a>
+      </div>
+    </li>
+    <li><a href="comp.htm">comparison</a></li>
+  </ul>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 style="margin-bottom: 40px">Summary: latitude vs. wind speed</h3>
+    
+      <img src="plotImages/Fig4.png" class="img-thumbnail" alt="figure.1,latVwind" style="width:70%" align="left" style="padding: 10px"> 
+      <p>The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis, we first pulled data from the OpeaWeatherMap API to assemble a dataset on over 500 cities.</p>
+      <p>After assembling the dataset we used Matplotlib to plot various aspects of weather vs latitude. Factors we looked at included temperature, cloudiness, windspeed and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. </p>
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
+

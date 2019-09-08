@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WebHW_WeatherCities</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS_hw.css"> 
+
+
+<style>
+
+.img-thumbnail {
+padding-right: 20px;
+padding-bottom: 20px;
+line-height: 1.42857143;
+background-color: #ddd;
+border: 1px solid #ddd;
+border-radius: 4px;
+-webkit-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+display: inline-block;
+max-width: 100%;
+height: auto;
+}
+
+.dropdown, .dropup {
+position: static;
+}
+</style>
+</head>
+
+<body>
+
+  <ul style="height:44px">
+    <li id="HomeName"><a href="WebHW_weatherCities.html" class="active" style="font-size:18px"><strong>latitudes</strong></a></li>
+    <li><a href="weatherData.html" >data</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">plots</a>
+      <div class="dropdown-content">
+        <a href="temp.htm">temp</a>
+        <a href="humid.htm">humidity</a>
+        <a href="cloud.htm"">clouds</a>
+        <a href="wind.htm">wind</a>
+      </div>
+    </li>
+    <li><a href="comp.htm">comparison</a></li>
+  </ul>
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12 col-sm-12"">
+      <h3 style="margin-bottom: 40px">Comparison of visualizations</h3>
+      <p style="padding-bottom:20px">select an image below to see analysis</p>
+    
+      <a href="temp.htm"> <img src="plotImages/Fig1.png" class="img-thumbnail" alt="figure.1,latVtemp" style="width:49%"></a>
+      <a href="humid.htm"> <img src="plotImages/Fig2.png" class="img-thumbnail" alt="figure.2,latVhum" style="width:49%"></a>
+      <a href="cloud.htm"> <img src="plotImages/Fig3.png" class="img-thumbnail" alt="figure.3,latVcloud" style="width:49%"></a>
+      <a href="wind.htm"> <img src="plotImages/Fig4.png" class="img-thumbnail" alt="figure.4,latVwind" style="width:49%"></a>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
