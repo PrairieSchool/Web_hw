@@ -72,7 +72,7 @@ li.dropdown {
 
 p {
   font-size: 14px;
-  font-family: courier;
+  font-family: Courier;
 }
 
 h4 {
@@ -92,4 +92,10 @@ h4 {
 
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #c6c4d1;
+}
+
+.table>tbody>tr>td {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-stretch: ;
+  font-size: 12px
 }

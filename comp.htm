@@ -37,7 +37,7 @@ position: static;
 <body>
 
   <ul style="height:44px">
-    <li id="HomeName"><a href="WebHW_weatherCities.html" class="active" style="font-size:18px"><strong>latitudes</strong></a></li>
+    <li id="HomeName"><a href="WebHW_weatherCities.html" style="font-size:18px"><strong>latitudes</strong></a></li>
     <li><a href="weatherData.html" >data</a></li>
     <li class="dropdown">
       <a href="javascript:void(0)" class="dropbtn">plots</a>
@@ -48,21 +48,27 @@ position: static;
         <a href="wind.htm">wind</a>
       </div>
     </li>
-    <li><a href="comp.htm">comparison</a></li>
+    <li><a href="comp.htm" class="active">comparison</a></li>
   </ul>
 
 <div class="container">
   <div class="row">
     
-    <div class="col-md-12 col-sm-12"">
+    <div class="xcol-md-12 col-sm-"">
       <h3 style="margin-bottom: 40px">Comparison of visualizations</h3>
-      <p style="padding-bottom:20px">select an image below to see analysis</p>
-    
-      <a href="temp.htm"> <img src="plotImages/Fig1.png" class="img-thumbnail" alt="figure.1,latVtemp" style="width:49%"></a>
-      <a href="humid.htm"> <img src="plotImages/Fig2.png" class="img-thumbnail" alt="figure.2,latVhum" style="width:49%"></a>
-      <a href="cloud.htm"> <img src="plotImages/Fig3.png" class="img-thumbnail" alt="figure.3,latVcloud" style="width:49%"></a>
-      <a href="wind.htm"> <img src="plotImages/Fig4.png" class="img-thumbnail" alt="figure.4,latVwind" style="width:49%"></a>
-
+      <p style="font-size:16px" style="padding-bottom:30px">select an image below to see analysis</p>
+      <div class="col-md-6 col-sm-12">
+        <a href="temp.htm"> <img src="plotImages/Fig1.png" class="img-thumbnail" alt="figure.1,latVtemp" style="width:100%"></a>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <a href="humid.htm"> <img src="plotImages/Fig2.png" class="img-thumbnail" alt="figure.2,latVhum" style="width:100%"></a>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <a href="cloud.htm"> <img src="plotImages/Fig3.png" class="img-thumbnail" alt="figure.3,latVcloud" style="width:100%"></a>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <a href="wind.htm"> <img src="plotImages/Fig4.png" class="img-thumbnail" alt="figure.4,latVwind" style="width:100%"></a>
+      </div>
     </div>
   </div>
 </div>
