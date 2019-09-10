@@ -13,7 +13,7 @@ ul {
 
 .active {
   background-color: #ddd;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
 }
 li {
   float: right;
